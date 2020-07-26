@@ -7,4 +7,8 @@ Steps to follow to run in local:
 3. ./gradlew build
 4. java -jar ./server/build/libs/server-1.0-SNAPSHOT.jar
 
+Steps to run in docker container :
+1. docker build -t job-scheduler .
+2. docker run -p 8080:8080 job-scheduler
+
 Swagger Link : http://localhost:8080/swagger-ui.html#/
