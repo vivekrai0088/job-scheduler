@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id "net.ltgt.apt" version "0.21"
+    id 'java'
+}
+
+bootJar {
+    mainClassName = 'org.vivek.job.scheduler.JobSchedulerApplication'
+}
+
+group 'org.vivek'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":api")
+
+    implementation 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    implementation 'org.quartz-scheduler:quartz:2.3.1'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+    implementation 'com.zaxxer:HikariCP:3.2.0'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+}

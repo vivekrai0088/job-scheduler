@@ -1,0 +1,5 @@
+rootProject.name = 'job-scheduler'
+include 'api'
+include 'client'
+include 'server'
+

@@ -1,0 +1,20 @@
+# Ignore Folders
+/.gradle/
+**/.idea/
+build/
+out/production/
+generated-src/
+node_modules/
+**/api/out/
+**/client/out/
+**/server/out/
+**/postgres/out
+
+# Ignore Files
+*.iml
+*.ipr
+*.iws
+*.pyc
+*.class
+/remote_build.conf
+/.remote_build_history

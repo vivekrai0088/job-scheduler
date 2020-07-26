@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.vivek'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.1'
+
+}
